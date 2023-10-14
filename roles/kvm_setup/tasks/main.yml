@@ -1,5 +1,5 @@
 ---
-- name: "Install kvm and dependencies"
+- name: Install kvm and dependencies
   dnf:
     name:
       - qemu-kvm
