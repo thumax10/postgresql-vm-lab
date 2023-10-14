@@ -1,0 +1,5 @@
+{
+	"yaml.schemas": {
+		"https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks": "file:///c%3A/Users/maxth/Documents/Private-Projects/postgresql-vm-lab/postgresql-vm-lab/roles/kvm_setup/tasks/main.yml"
+	}
+}

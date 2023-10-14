@@ -1,0 +1,9 @@
+---
+- name: "Install kvm and dependencies"
+  dnf:
+    name:
+      - qemu-kvm
+      - guestfs-tools
+      - python3-libvirt
+    state: latest
+  become: true
