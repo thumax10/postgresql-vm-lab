@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+sudo virt-install \
+  --name simple-rocky-vm-kickstart4 \
+  --memory 4096 \
+  --vcpus 1 \
+  --disk size=20,format=qcow2 \
+  --os-variant=rocky9 \
+  --location /var/lib/libvirt/images/Rocky-9.2-x86_64-minimal.iso \
+  --graphics none \
+  --initrd-inject=/home/thumax/rocky-linux.ks \
+  --extra-args='inst.ks=file:/rocky-linux.ks console=ttyS0'
