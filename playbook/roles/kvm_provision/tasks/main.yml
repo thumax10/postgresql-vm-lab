@@ -1,4 +1,9 @@
----
+- name: Download VM Image
+  ansible.builtin.get_url:
+    url: "{{ default/vm_image_url }}"
+    dest: "{{ libvirt_pool_dir }}{{ vm_image_name }}"
+    checksum: "sha256:{{ vm_image_checksum }}"
+
 - name: Create VM from Kickstart file
   community.libvirt.virt:
     name: inventory_hostname 

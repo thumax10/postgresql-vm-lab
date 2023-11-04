@@ -1,14 +1,8 @@
-  - name: Install kvm and dependencies
-    ansible.builtin.dnf:
-      name:
-        - qemu-kvm
-        - guestfs-tools
-        - python3-libvirt
-      state: latest
-    become: true
-
-  - name: Download VM Image
-    ansible.builtin.get_url:
-      url: "{{ vm_image_url }}"
-      dest: "{{ libvirt_pool_dir }}{{ vm_image_name }}"
-      checksum: "sha256:{{ vm_image_checksum }}"
+- name: Install kvm and dependencies
+  ansible.builtin.dnf:
+    name:
+      - qemu-kvm
+      - guestfs-tools
+      - python3-libvirt
+    state: latest
+  become: true
