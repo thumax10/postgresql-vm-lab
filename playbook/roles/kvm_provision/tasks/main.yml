@@ -3,6 +3,7 @@
     url: "{{ default/vm_image_url }}"
     dest: "{{ libvirt_pool_dir }}{{ vm_image_name }}"
     checksum: "sha256:{{ vm_image_checksum }}"
+  become: true
 
 - name: Create VM from Kickstart file
   community.libvirt.virt:
