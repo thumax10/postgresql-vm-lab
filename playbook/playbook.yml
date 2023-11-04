@@ -1,9 +1,9 @@
 ---
 
-- name: Preperation 
-  hosts: localhost
-  roles: kvm_setup 
+  - name: Preperation 
+    hosts: localhost
+    roles: kvm_setup 
 
-- name: VM Setup
-  hosts: all
-  roles: kvm_setup
+  - name: VM Setup
+    hosts: all
+    roles: kvm_setup
