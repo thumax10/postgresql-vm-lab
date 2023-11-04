@@ -1,6 +1,0 @@
----
-tasks:
-  - include_role:
-      name: "kvm_setup" 
-  - include_role:
-      name: "kvm_provision" 
