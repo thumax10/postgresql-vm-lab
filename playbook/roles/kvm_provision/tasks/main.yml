@@ -3,4 +3,4 @@
 - name: Create VM from Kickstart file
   community.libvirt.virt:
     name: inventory_hostname 
-    memory: {{ vm_specs_memory: }}
+    memory: "{{ vm_specs_memory }}"
