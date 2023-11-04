@@ -1,5 +1,4 @@
 ---
-
 - name: Create VM from Kickstart file
   community.libvirt.virt:
     name: inventory_hostname 

@@ -1,4 +1,3 @@
----
   - name: Install kvm and dependencies
     ansible.builtin.dnf:
       name:
