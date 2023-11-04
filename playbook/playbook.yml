@@ -5,6 +5,6 @@
     - kvm_setup
 
 - name: VM Setup Play
-  hosts: lab
+  hosts: localhost
   roles:
     - kvm_provision
