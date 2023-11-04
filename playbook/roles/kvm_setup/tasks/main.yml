@@ -1,6 +1,6 @@
 ---
 - name: Install kvm and dependencies
-  dnf:
+  ansible.builtin.dnf:
     name:
       - qemu-kvm
       - guestfs-tools
