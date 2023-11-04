@@ -8,6 +8,7 @@
     become: true
 
   - name: Download VM Image
-    get_url: "{{ vm_image_url }}"
-    dest: "{{ libvirt_pool_dir }}{{ vm_image_name }}"
-    checksum: "sha256:{{ vm_image_checksum }}"
+    ansible.builtin.get_url:
+      url: "{{ vm_image_url }}"
+      dest: "{{ libvirt_pool_dir }}{{ vm_image_name }}"
+      checksum: "sha256:{{ vm_image_checksum }}"
